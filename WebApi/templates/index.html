@@ -1,0 +1,23 @@
+﻿<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created By</th>
+            <th>Created On</th>
+            <!--<th>&nbsp;</th>-->
+            <!--<th>action</th>-->
+        </tr>        
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="todo in data.toDos">
+            <td>{{todo.title}}</td>
+            <td>{{todo.description}}</td>
+            <td>{{todo.createdBy.lastName}}, {{todo.createdBy.firstName}}</td>
+            <td>{{todo.createdOn | date:medium}}</a></td>
+            <!--<td><a ng-href="#/deleteToDo/{{todo.id}}">delete</a></td>-->
+            <!--<td><input type="url" data-ng-click="deleteToDo({{todo.id}})">delete</input></td>-->
+            <td><button data-ng-click="deleteToDo(todo.id)">delete</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,173 @@
+﻿<!--<form>
+    <fieldset>
+        <label for="Title">Title</label>
+        <input name="Title" type="text" />
+    </fieldset>
+</form>-->
+
+<!--<form>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>-->
+
+<!--<form>
+        <div class="form-group">
+            <label for="Title"  class="control-label col-xs-1">Title</label>
+            <div class="col-xs-11">
+                <input type="text" class="form-control" id="Title1" placeholder="Title">
+            </div>
+        </div>       
+        <div class="form-group">
+            <label for="Description" class="control-label col-xs-1">Description</label>
+            <div class="col-xs-11">
+                <textarea cols="10" rows="10" class="form-control"></textarea>
+            </div>            
+        </div>        
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+</form>-->
+
+<form class="form-horizontal" role="form">
+    <div class="row">
+        <div class="col-sm-12 col-lg-8">
+            <div class="form-group">
+                <label for="Title" class="col-md-4 control-label">Title:</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="Text1" placeholder="Title" data-ng-model="newToDo.title">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+            <div class="form-group">
+                <label for="Description" class="col-md-4 control-label">Description:</label>
+                <div class="col-md-8">
+                    <!--<input type="password" class="form-control" id="Description" placeholder="Password">-->
+                    <textarea class="form-control" id="Description" cols="5" rows="5" data-ng-model="newToDo.description"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+            <div class="form-group">
+                <label for="CreatedBy" class="col-md-4 control-label">Created By:</label>
+
+                <div class="col-md-8">
+                    <input class="form-control" id="CreatedBy" placeholder="CreatedBy" value="12-02-2012" data-ng-model="fndlname">                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-8"> 
+                     <button type="submit" data-ng-click="createToDo()" class="btn btn-primary">Create</button>                    
+                </div>
+            </div>
+        </div>
+       <!--class="col-xs-offset-2 col-xs-10"-->
+        <!--<div class="col-sm-12 col-lg-8">
+            <div class="form-group">
+                <label for="CreatedBy" class="col-md-4 control-label">Created By:</label>
+
+                <div class="input-append date col-md-8">
+                    <input class="form-control" id="CreatedOn" placeholder="CreatedBy" value="12-02-2012" data-ng-model="newToDo.createdBy">
+                    <span class="add-on"><i class="icon-th"></i></span>
+                </div>
+            </div>
+        </div>-->
+
+        <!--<div class="col-sm-12 col-lg-12">
+        <div class="form-group">
+          <label for="Title" class="col-xs-4 col-sm-4 col-lg-4 col-md-4 control-label">Title:</label>
+          <div class="col-xs-8 col-sm-8 col-lg-8 col-md-8">
+            <input type="text" class="form-control" id="Title" placeholder="Title">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-12">
+        <div class="form-group">
+          <label for="Description" class="col-xs-4 col-sm-4 col-lg-4 col-md-4 control-label">Description:</label>
+          <div class="col-xs-8 col-sm-8 col-lg-8 col-md-8">
+            <input type="password" class="form-control" id="Description" placeholder="Password">
+          </div>
+        </div>
+      </div>-->
+
+        <!--      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="inputLabel3" class="col-md-4 control-label">Label 3:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text1" placeholder="Label 3">
+          </div>
+        </div>
+      </div>      
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="inputLabel4" class="col-md-4 control-label">Label 4:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text2" placeholder="Label 4">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="input5" class="col-md-4 control-label">1234567890:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text3" placeholder="input 5">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="input6" class="col-md-4 control-label">123456789012:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text4" placeholder="input 6">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="input7" class="col-md-4 control-label">12345678901234:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text5" placeholder="input 7">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="input8" class="col-md-4 control-label">1234567890123456:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text6" placeholder="input 8">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="input9" class="col-md-4 control-label">123456789012345678:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text7" placeholder="input 9">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="form-group">
+          <label for="input10" class="col-md-4 control-label">12345678901234567890:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="Text8" placeholder="input 10">
+          </div>
+        </div>
+      </div>-->
+    </div>
+    <!-- /.row this actually does not appear to be needed with the form-horizontal -->
+</form>

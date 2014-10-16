@@ -1,0 +1,10 @@
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\Model.dll.config
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\Model.dll
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\Model.pdb
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\EntityFramework.dll
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\EntityFramework.xml
+D:\Pradeep\RnD\EntityFx\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Pradeep\RnD\EntityFx\Model\obj\Debug\Model.dll
+D:\Pradeep\RnD\EntityFx\Model\obj\Debug\Model.pdb
+D:\Pradeep\RnD\EntityFx\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
